@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <!--Para los iconos-->
+    <script src="https://kit.fontawesome.com/064cffb98d.js" crossorigin="anonymous"></script>
+    <title>Rick and Morty</title>
+</head>
+
+<!--
+
+ .-´´´´.
+|  * ´ /
+ \----/
+
+-->
+
+
+<body>
+
+
+    <div id="wrapper">
+        <header>
+        </header>
+        <main>
+
+            <div id="encabezado">
+                <div id="encabezado__a">
+
+                    <!-- FOTO -->
+                    <div id="encabezado__foto">
+                        <img src="../media/encabezado.jpg" alt="Rick y Morty">
+                    </div>
+
+                    <!-- DATOS -->
+                    <div id="encabezado__datos">
+
+                        <!-- TITULO INFO -->
+                        <div id="encabezado__datos__a">
+                            <div id="a__principal">
+                                <h1 id="encabezado__titulo">Rick y Morty online y en castellano</h1>
+                            </div>
+                            <div id="a__secundario">
+                                <p>Dec. 02, 2013</p>
+                                <p>Adult Swim</p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- PUNTUACION -->
+                        <div id="encabezado__datos__b">
+
+                            <div id="b__principal">
+                                <p>9.4</p>
+                            </div>
+
+                            <div id="b__secundario">
+                                <form action="datos.php" id="puntuacion">
+                                    <input class="estrella" id="radio1" type="radio" name="estrellas" value="5">
+                                    <label class="estrella__fisica" for="radio1">★</label>
+                                    <input class="estrella" id="radio2" type="radio" name="estrellas" value="4">
+                                    <label class="estrella__fisica" for="radio2">★</label>
+                                    <input class="estrella" id="radio3" type="radio" name="estrellas" value="3">
+                                    <label class="estrella__fisica" for="radio3">★</label>
+                                    <input class="estrella" id="radio4" type="radio" name="estrellas" value="2">
+                                    <label class="estrella__fisica" for="radio4">★</label>
+                                    <input class="estrella" id="radio5" type="radio" name="estrellas" value="1">
+                                    <label class="estrella__fisica" for="radio5">★</label>
+                                </form>
+                                <div id="votos">
+                                    <i class="far fa-user"></i>
+                                    <p>45 votos</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <!-- GENERO -->
+                        <div id="encabezado__datos__c">
+                            <p>Comedia</p>
+                            <hr>
+                            <p>Animación</p>
+                            <hr>
+                            <p>Fantasy</p>
+                        </div>
+                    </div>
+                </div> <!-- / encabezado__a -->
+
+                <!-- OPCIONES -->
+                <div id="encabezado__b">
+                    <hr>
+                    <nav id="encabezado__b__menu">
+                        <ul id="nav__b__lista">
+                            <li class="nav__b__apartado">
+                                <a href="#" class="nav__enlace">Episodios</a>
+                            </li>
+                            <li class="nav__b__apartado">
+                                <a href="#" class="nav__enlace">Info</a>
+                            </li>
+                            <li class="nav__b__apartado">
+                                <a href="#" class="nav__enlace">Reparto</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <hr>
+                </div> <!-- / encabezado__b -->
+
+            </div> <!-- / encabezado-->
+
+
+            <!-- EPISODIOS -->
+            <div id="episodios">
+                <nav id="episodios__temporadas">
+                    <ul>
+                        <li class="temporadas__temporada" id="temporada__1">
+
+                            <!-- TEMPORADA 1 -->
+
+                            <a href="#temporada__1">
+                                <div class="temporada__boton">
+                                    <p>1</p>
+                                    <p>Temporada 1</p>
+                                    <p>Dec. 02, 2013</p>
+                                </div>
+                            </a>
+                            <div class="temporada__capitulos">
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/1.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 1</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Piloto</p>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/2.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 2</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>El cortador de césped perruno</p>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/3.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 3</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Parque anatómico</p>
+                                    </div>
+                                </a>
+
+                                <hr>
+
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/4.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 4</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Los alienígenas de los giros inesperados</p>
+                                    </div>
+                                </a>
+
+                                <hr>
+
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/5.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 5</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>La misión de los Meeseeks</p>
+                                    </div>
+                                </a>
+
+                                <hr>
+
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/6.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 6</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Poción de Rick nº 9</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/7.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 7</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Educando a Gazórpazorp</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/8.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 8</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Sesenta Rick-nutos</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/9.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 9</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Cosas necesarias</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/10.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 10</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Encuent-Ricks en la Rick-cera fase</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/11.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 11</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Negocio Ricksy</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+
+                        <!-- TEMPORADA 2 -->
+
+
+                        <li class="temporadas__temporada" id="temporada__2">
+                            <a href="#temporada__2">
+                                <div class="temporada__boton">
+                                    <p>2</p>
+                                    <p>Temporada 2</p>
+                                    <p>Jul. 26, 2015</p>
+                                </div>
+                            </a>
+                            <div class="temporada__capitulos">
+                                <div class="temporada__capitulos">
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/1.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 1</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Una Rick-grieta en el tiempo</p>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/2.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 2</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Huída a Mortynoche</p>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/3.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 3</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Asimilación autoerótica</p>
+                                        </div>
+                                    </a>
+    
+                                    <hr>
+    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/4.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 4</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Total Rick-tal</p>
+                                        </div>
+                                    </a>
+    
+                                    <hr>
+    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/5.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 5</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Estamos cerdis</p>
+                                        </div>
+                                    </a>
+    
+                                    <hr>
+    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/6.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 6</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Los Ricks deben estar locos</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/7.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 7</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Golpe en el pequeño Sánchez</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/8.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 8</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Cable interdimensional 2: Tentando al destino</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/9.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 9</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Mira quien purga también</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/10.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 10</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>De squanch en squanch</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- TEMPORADA 3 -->
+
+                        <li class="temporadas__temporada" id="temporada__3">
+                            <a href="#temporada__3">
+                                <div class="temporada__boton">
+                                    <p>3</p>
+                                    <p>Temporada 3</p>
+                                    <p>Dec. 02, 2013</p>
+                                </div>
+                            </a>
+                            <div class="temporada__capitulos">
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/1.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 1</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Piloto</p>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/2.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 2</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>El cortador de césped perruno</p>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/3.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 3</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Parque anatómico</p>
+                                    </div>
+                                </a>
+
+                                <hr>
+
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/4.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 4</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Los alienígenas de los giros inesperados</p>
+                                    </div>
+                                </a>
+
+                                <hr>
+
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/5.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 5</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>La misión de los Meeseeks</p>
+                                    </div>
+                                </a>
+
+                                <hr>
+
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/6.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 6</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Poción de Rick nº 9</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/7.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 7</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Educando a Gazórpazorp</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/8.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 8</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Sesenta Rick-nutos</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/9.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 9</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Cosas necesarias</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/10.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 10</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Encuent-Ricks en la Rick-cera fase</p>
+                                    </div>
+                                </a>
+                                
+                                <hr>
+                                
+                                <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                    <img src="../media/temporada1/11.jpg" alt="caratula" class="capitulo__caratula">
+                                    <p>1 - 11</p>
+                                    <div class="capitulo__descripcion">
+                                        <p>Negocio Ricksy</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!-- TEMPORADA 4 -->
+
+
+                        <li class="temporadas__temporada" id="temporada__4">
+                            <a href="#temporada__4">
+                                <div class="temporada__boton">
+                                    <p>4</p>
+                                    <p>Temporada 4</p>
+                                    <p>Nov. 10, 2019</p>
+                                </div>
+                            </a>
+                            <div class="temporada__capitulos">
+                                <div class="temporada__capitulos">
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/1.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 1</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Una Rick-grieta en el tiempo</p>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/2.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 2</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Huída a Mortynoche</p>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/3.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 3</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Asimilación autoerótica</p>
+                                        </div>
+                                    </a>
+    
+                                    <hr>
+    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/4.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 4</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Total Rick-tal</p>
+                                        </div>
+                                    </a>
+    
+                                    <hr>
+    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/5.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 5</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Estamos cerdis</p>
+                                        </div>
+                                    </a>
+    
+                                    <hr>
+    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/6.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 6</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Los Ricks deben estar locos</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/7.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 7</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Golpe en el pequeño Sánchez</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/8.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 8</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Cable interdimensional 2: Tentando al destino</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/9.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 9</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>Mira quien purga también</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <hr>
+                                    
+                                    <a href="https://youtu.be/ln7rNIruXn0" class="capitulos__capitulo">
+                                        <img src="../media/temporada2/10.jpg" alt="caratula" class="capitulo__caratula">
+                                        <p>1 - 10</p>
+                                        <div class="capitulo__descripcion">
+                                            <p>De squanch en squanch</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </nav>
+            </div> <!-- / episodios -->
+
+            
+            <!-- FORMULARIO -->
+            <hr class="hr__formulario">
+            <form action="servidor.php" id="formulario">
+                <div id="formulario__titulo">
+                    <i class="far fa-comment-alt"></i>
+                    <h2>Deja un Comentario</h2>
+                </div>
+                <textarea name="areatexto" id="formulario__area"  class="formulario__objeto" cols="80" rows="5"></textarea>
+                <div id="requisitos">
+                    <div>
+                        <p>Nombre</p>
+                        <input type="text" class="formulario__objeto">
+                    </div>
+                    <div>
+                        <p>Correo electrónico</p>
+                        <input type="email" class="formulario__objeto">
+                    </div>
+                </div>
+            </form> 
+            <div id="enviar">
+                <a href="#">Publicar comentario</a>
+            </div>
+            <hr class="hr__formulario">
+
+            <!-- / formulario -->
+
+        </main>
+
+        <!-- footer -->
+
+        <footer>
+            <p><a href="https://entrepelis.org/series/rick-y-morty-castellano-online/" target="blank">La pagina copiada</a>, no se que más poner, si quereis venir al caminito del rey me avisais y dsp nos tomamos algo por ahí xd</p>
+        </footer>
+
+    </div><!-- / wrapper  -->
+</body>
+
+</html>

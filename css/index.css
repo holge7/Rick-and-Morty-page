@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+body{
+    background-image: url(../media/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+
+
+header{
+    height: 5rem;
+    background-image: url(../media/header.gif);
+    background-position-x: center;
+    background-position-y: 24rem;
+}
+header img{
+    border: 2px solid blue;
+    width: 100%;
+
+}
+
+/*-------------------  N A V  -------------------*/
+
+#nav__lista{
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+}
+.nav__apartado{
+    list-style: none;
+    padding: 1rem;
+}
+.nav__enlace{
+    text-decoration: none;
+    color: white;
+}
+
+/*-------------------  M A I N  -------------------*/
+main{
+    width: 70%;
+    padding: 2rem;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+#encabezado__a,
+#encabezado__datos{
+    display: flex;
+}
+
+#encabezado__datos{
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* FOTO */
+
+#encabezado__foto{    
+    margin-right: 2rem;
+    box-shadow: 0 .4rem 1rem black;
+}
+
+
+
+/* TITULO INFO */
+
+#encabezado__datos__a{
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+}
+#a__principal{
+    margin-bottom: 1rem;
+}
+#a__secundario{
+    display: flex;
+}
+#a__secundario p{
+    margin-right: 1rem;
+    font-size: .8rem;
+}
+#a__secundario p:nth-child(2){
+    color: rgb(35,140,0);
+}
+
+
+/* PUNTUACION */
+
+#encabezado__datos__b{
+    display: flex;
+}
+#b__principal{
+    border-radius: .3rem;
+    padding:1rem;
+    margin-right: 1rem;
+    background-color: rgba(165, 165, 165, 0.5);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#puntuacion{
+    direction: rtl; /* right to left */
+    display: flex;
+    font-size: 2rem;
+}
+.estrella{
+    display: none;
+}
+.estrella__fisica{
+    color: rgba(165, 165, 165, 0.5);
+}
+/*para que se marquen todas las estrellas anteriores*/
+label:hover,
+label:hover ~ label {
+    color: rgb(35,140,0);
+} 
+/*para que cuando pulsamos una estrella se quede marcada*/
+.estrella:checked ~ label {
+    color: rgb(35,140,0);
+}
+
+#votos{
+    display: flex;
+    font-size: .7rem;
+}
+#votos i{
+    margin-right: .5rem;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* GENERO */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+#encabezado__datos__c{
+    display: flex;
+}
+#encabezado__datos__c p{
+    margin: 0 .7rem;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* OPCIONES */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+#encabezado__b{
+    margin: 1.5rem 0;
+}
+#nav__b__lista{
+    display: flex;
+    list-style: none;
+}
+.nav__b__apartado{
+    margin: 1rem 1rem;
+    padding: .7rem;
+    border-radius: .3rem;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.nav__b__apartado:first-child{
+    background-color: rgb(35,140,0);
+}
+.nav__enlace:hover{
+    color: rgb(35,140,0);
+}
+
+.nav__enlace{
+    margin: 1rem 1rem;
+    padding: .7rem;
+    border-radius: .3rem;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* EPISODIOS */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+
+.temporadas__temporada{
+    list-style: none;
+    margin: .2rem 0;
+}
+
+.temporada__capitulos>hr{
+    border-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.temporada__boton{
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.temporada__boton p{
+    padding: 1rem 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.temporada__boton p:first-child{
+    background-color: rgb(35,140,0);
+    width: 2rem;
+
+}
+.temporada__boton p:last-child{
+    font-weight: normal;
+    font-size: .7rem;
+    color: rgb(143, 143, 143);
+}
+
+/*Funcion de click y abrir temporada*/
+/*ponemos todos los capitulos en none*/
+.temporada__capitulos{
+    display: none;
+}
+/*cuando hacemos click en un enlace, ponemos los capitulos en flex*/
+.temporadas__temporada:target .temporada__capitulos{
+    display: flex;
+    flex-direction: column;
+}
+
+.capitulos__capitulo{
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+.capitulos__capitulo>*{
+    margin-right:2rem;
+}
+.capitulo__caratula{
+    width: 6rem;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* FORMULARIO */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.hr__formulario{
+    margin: 2rem 0;
+    border: .3rem solid rgba(0, 0, 0, 0.6);
+}
+#formulario{
+    margin-top: 2rem;
+}
+.formulario__objeto{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#formulario__titulo{
+    display: flex;
+    align-items: center;
+}
+#formulario__titulo i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: rgb(35,140,0);
+}
+
+#formulario__area{
+    margin-top: 2rem;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+#requisitos{
+    display: flex;
+    margin-top: 2rem;
+    width: 93%;
+}
+#requisitos div{
+    width: 90%;
+}
+#requisitos div:nth-child(1){
+    margin-right: 2rem;
+}
+
+#requisitos div p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#requisitos div input{
+    width: 90%;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+#enviar{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(129, 129, 129, 0.6);
+    width: max-content;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 3rem;
+}
+#enviar:hover{
+    background-color: rgb(35,140,0);
+}
+#enviar:active a{
+    color: rgb(35,140,0);
+}
+#enviar:active{
+    background-color: white;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* OPCIONES */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+footer{
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+footer p{
+    text-align: center;
+    padding: 1rem;
+}
+footer p a{
+    color: rgb(114, 114, 230);
+}
