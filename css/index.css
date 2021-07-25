@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    box-sizing: border-box;
 }
 body{
     background-image: url(../media/fondo.jpg);
@@ -19,6 +20,7 @@ header{
     background-image: url(../media/header.gif);
     background-position-x: center;
     background-position-y: 24rem;
+    width: 100%;
 }
 header img{
     border: 2px solid blue;
@@ -50,7 +52,6 @@ main{
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
 }
-
 #encabezado__a,
 #encabezado__datos{
     display: flex;
@@ -66,6 +67,8 @@ main{
 
 #encabezado__foto{    
     margin-right: 2rem;
+}
+#encabezado__foto img{
     box-shadow: 0 .4rem 1rem black;
 }
 
@@ -327,4 +330,96 @@ footer p{
 }
 footer p a{
     color: rgb(114, 114, 230);
+}
+
+
+
+
+@media(max-width: 830px){
+    /*-------------------  M A I N  -------------------*/
+    main{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #encabezado__a{
+        width: 100%;
+    }
+
+    #encabezado__a,
+    #encabezado__datos{
+        display: flex;
+    }
+
+    #encabezado__datos{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /* FOTO */
+
+    #encabezado__foto{  
+        width: 30%;
+        margin-right: 1rem;
+        box-shadow: none;
+        overflow: hidden;
+    }
+    #encabezado__foto img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* DATOS */
+    #encabezado__datos{
+        width: 70%;
+    }
+
+    /* TITULO INFO */
+    #encabezado__titulo{
+        font-size: 1.5rem;
+    }
+
+    /* PUNTUACION */
+    #b__principal{
+        font-size: .9rem;
+    }
+
+
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* EPISODIOS */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+    #episodios{
+    }
+
+
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* FORMULARIO */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #requisitos{
+        flex-direction: column;
+        align-items: center;
+    }   
+    #requisitos div{
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #requisitos div:nth-child(1){
+        margin-right: 0;
+    }
+    #requisitos div input{
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
 }
