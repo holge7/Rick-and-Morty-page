@@ -158,8 +158,10 @@ label:hover ~ label {
 #nav__b__lista{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 .nav__b__apartado{
+    border: .15rem solid rgb(35,140,0);
     margin: 1rem 1rem;
     padding: .7rem;
     border-radius: .3rem;
@@ -421,5 +423,96 @@ footer p a{
     #requisitos div input{
         font-size: 1.2rem;
         padding: .5rem;
+    }
+}
+
+@media(max-width: 512px){
+
+    /*-------------------  N A V  -------------------*/
+
+    header{
+        background-size: 70rem;
+        background-position-x: center;
+        background-position-y: 50rem;
+        width: 100%;
+    }
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* MAIN */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+        /* FOTO */
+
+        #encabezado__foto{  
+            width: 40%;
+        }
+        #encabezado__foto img{
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* DATOS */
+        #encabezado__datos{
+            width: 60%;
+        }
+
+        /* TITULO INFO */
+        #encabezado__titulo{
+            font-size: 1.13rem;
+        }
+
+        #a__secundario p{
+            font-size: .6rem;
+        }
+
+        /* PUNTUACION */
+        #b__principal{
+            padding: .5rem;
+            margin: .5rem;
+        }
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* GENERO */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+        #encabezado__datos__c{
+            display: none;
+        }
+        #hr__genero{
+            display: none;
+        }
+
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* EPISODIOS */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+    .temporada__boton p:nth-child(2){
+        font-weight: normal;
+    }
+    .temporada__boton p:nth-child(3){
+        padding: 1.2rem 0;
+    }
+    
+    .capitulos__capitulo{
+        display: flex;
+        align-items: center;
+        margin: .5rem 0;
+    }
+    .capitulos__capitulo p{
+        font-size: .8rem;
+    }
+    .temporada__capitulos>img{
+        width: 30%;
+    }
+    .capitulos__capitulo>p{
+        width: max-content;
+        width: 25%;
+        margin-right: 1rem;
+    }
+    .capitulos__capitulo>div{
+        margin-right: 0;
+        width: 55%;
+        margin-right: .4rem;
     }
 }
