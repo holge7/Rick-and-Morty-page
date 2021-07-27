@@ -254,6 +254,7 @@ label:hover ~ label {
 }
 #formulario{
     margin-top: 2rem;
+
 }
 .formulario__objeto{
     background-color: rgba(0, 0, 0, 0.6);
@@ -272,15 +273,18 @@ label:hover ~ label {
     margin-top: 2rem;
     width: 90%;
     font-size: 1.2rem;
+    resize: none;
+    padding: .5rem;
 }
 
 #requisitos{
     display: flex;
     margin-top: 2rem;
-    width: 93%;
+    width: 90%;
 }
 #requisitos div{
-    width: 90%;
+    width: 100%;
+    
 }
 #requisitos div:nth-child(1){
     margin-right: 2rem;
@@ -292,7 +296,7 @@ label:hover ~ label {
     margin-bottom: 1rem;
 }
 #requisitos div input{
-    width: 90%;
+    width: 100%;
     font-size: 1.2rem;
     padding: .5rem;
 }
@@ -514,5 +518,17 @@ footer p a{
         margin-right: 0;
         width: 55%;
         margin-right: .4rem;
+    }
+    #puntuacion{
+        font-size: 1.5rem;
+    }
+
+
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* FORMULARIO */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #formulario{
+        margin: auto;
     }
 }
